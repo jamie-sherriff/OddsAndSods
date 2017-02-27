@@ -7,7 +7,8 @@ __contact__ = "https://github.com/jamie-sherriff"
 __status__ = "Prototype"
 __date__ = "27-02-2017"
 '''
-Simple script to download over the last 100 images found at usap antartica web cams
+Simple script to download over the last 100 images found at usap antarctica web cams
+Built using pyinstaller --onefile download_loop.py --hidden-import queue
 '''
 import shutil
 import time
@@ -16,7 +17,6 @@ import random
 import os
 import sys
 from time import strftime, localtime
-#Built using pyinstaller --onefile download_loop.py --hidden-import queue
 dir_path = os.path.dirname(os.path.realpath(__file__))
 start_time = strftime("%Y-%m-%d %H-%M-%S", localtime())
 
