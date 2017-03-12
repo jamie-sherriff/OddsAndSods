@@ -74,9 +74,7 @@ def format_number(number):
 
 
 for number in range(1, 101, 1):
-    #url = 'https://www.usap.gov/videoClipsAndMaps/SouthPoleWebcam/MobileWebCam' + format_number(number) + '.jpg'
     url = BASE_URL + format_number(number) + '.jpg'
-    # url = 'https://www.usap.gov/videoClipsAndMaps/SouthPoleWebcam/McM'+ format_number(number) + '.jpg'
     sleep_time = random.randint(10, 20)
     print('sleeping for: ' + str(sleep_time))
     time.sleep(sleep_time)
